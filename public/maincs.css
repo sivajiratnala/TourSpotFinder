@@ -1,0 +1,58 @@
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+label
+{
+	width:200px;
+}
+.disabled1 {
+    color: black;
+}
+.disabled1 a:hover {
+    color: black;
+}
+.jki
+{
+	margin-left:200px;
+}
+input
+{
+	width:360px;
+}
+body
+{
+	background: #348F50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.jumbotron {
+    padding: 2rem 1rem;
+    text-align: center;
+    color: whitesmoke;
+}
+.gk {
+    background-color: #17a2b875;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255,255,255);
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0f7bf7c2
+}
+.card-body {
+    
+    padding: 0.2rem;
+}
+.img
+{
+	float:left;
+	width:30%;
+	margin:1.66%;
+}
+.bg-dark1
+{
+	background-color:#d8e6f575;
+}

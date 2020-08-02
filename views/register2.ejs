@@ -1,0 +1,32 @@
+<%- include("partials/header.ejs") %>
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-info">
+  <a class="navbar-brand ml-5" href="#">Helpcamp</a>
+</nav>
+<div  class="jumbotron gk">
+	<div class="container">
+		<h1 class="display-4">HELP CAMP</h1>
+		<p class="lead">Know about our hand picked Tourism spots from all over the country!</p>
+    </div>
+</div>
+<h1 style="color:white; font-weight: 300;" class="display-5 text-center mt-5">Register</h1>
+<div class="d-flex justify-content-center align-items-center container ">
+
+    <div class="row mt-1">
+     
+	<form action="/register" method="POST" style="width:300px;"  >
+  <div class="form-group" >
+    
+    <input type="text" class="form-control" id="exampleInputEmail1" name="username" placeholder="username" required>
+  </div>
+  <div class="form-group">
+    <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="password" required>
+  </div>
+    <p style="color:red;"> Username already exists try new one</p>
+  <button type="submit" class="btn btn-primary py-1">Signup</button>
+</form>
+	</div>
+</div>
+<p style="color:white; " class="text-center">
+			already a user <a type="button" class="btn btn-small btn-info py-0"href="/login">login</a>
+		</p>
+<%- include("partials/footer.ejs") %>

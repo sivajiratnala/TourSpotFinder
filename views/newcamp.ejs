@@ -1,0 +1,55 @@
+<%- include("partials/header.ejs") %>
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-info">
+  <a class="navbar-brand ml-5" href="#">Helpcamp</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	  <ul class="navbar-nav">
+		 <a class="nav-link  " href="/">View Campgrounds</a> 
+		  </ul>
+         <ul class="navbar-nav ml-auto" >
+         <span style="color:white" class="mt-2" >user: <%= currentuser.username %>
+		 </span>
+         <a class="nav-link " href="/logout">log out</a>
+		</ul>
+	</div>
+</nav>
+<div class=" container mt-5">
+	<form action="/campgrounds" method="POST">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Nmae of campground:</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Image url:</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" name="image" required>
+  </div>
+		
+  <div class="form-group">
+    <label for="exampleInputdescription1">Description:</label>
+	  <textarea class="form-control" id="exampleInputdescription1" name="description" required></textarea>
+  </div>	
+		<div class="form-group">
+    <label for="exampleInputaddress">Address:</label>
+    <input type="text" class="form-control" id="exampleInputaddress" name="address" required>
+  </div>
+		<div class="form-group">
+    <label for="exampleInputCost">Cost per day in Rupees:</label>
+    <input type="text" class="form-control" id="exampleInputCost" name="cost" required>
+  </div>
+		<div class="form-group">
+    <label for="exampleInputamenities">Amenities available:</label>
+    <input type="text" class="form-control" id="exampleInputamenities" name="amenities" required>
+  </div>
+  <input type="submit" class="btn btn-primary">
+</form>
+
+</div>
+
+
+
+
+
+<%- include("partials/footer.ejs") %>

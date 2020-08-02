@@ -1,0 +1,60 @@
+body
+{
+	background-color:#6c757d0f;
+}
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.bg-light {
+    background-color: #6c757d1c!important;
+}
+.card
+{
+	background-color: #6c757d1c!important;
+}
+
+.disabled1 {
+    color: black;
+}
+.disabled1 a:hover {
+    color: black;
+}
+.jki
+{
+	margin-left:200px;
+}
+input
+{
+	width:360px;
+}
+
+.jumbotron {
+    padding: 2rem 1rem;
+    text-align: center;
+    color: whitesmoke;
+}
+.gk {
+    background-color: #17a2b875;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255,255,255);
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0f7bf7c2
+}
+.card-body {
+    
+    padding: 0.2rem;
+}
+.img
+{
+	float:left;
+	width:30%;
+	margin:1.66%;
+}
+.bg-dark1
+{
+	background-color:#d8e6f575;
+}
