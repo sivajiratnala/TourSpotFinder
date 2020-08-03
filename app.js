@@ -230,6 +230,7 @@ app.get("/logout",isLoggedIn,function(req,res){
  req.logout(); res.redirect("/login");
 });
 //================================================
-app.listen(3000,function(){
-	console.log("server is on");
+var port = process.env.PORT || 3000;
+app.listen(port, function () {  
+  console.log("Server Has Started!");
 });
