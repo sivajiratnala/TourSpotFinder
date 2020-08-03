@@ -18,8 +18,7 @@ app.use(require("express-session")({
 	  User            =  require("./models/user"),
       Camp            =  require("./models/campground");
 
-mongoose.connect("mongodb+srv://sivaji:sivaji@cluster0.sivaji79aaw.mongodb.net/<dbname>?retryWrites=true&w=majority"
-, {
+mongoose.connect("mongodb+srv://sivaji:sivaji@cluster0.79aaw.mongodb.net/tourguide?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   //useUnifiedTopology: true,
 	useCreateIndex: true
