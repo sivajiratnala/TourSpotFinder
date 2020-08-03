@@ -17,10 +17,16 @@ app.use(require("express-session")({
  const  Comment         =  require("./models/comments"),
 	  User            =  require("./models/user"),
       Camp            =  require("./models/campground");
-mongoose.connect("mongodb://localhost:27017/YelpCampDataBase"
+
+mongoose.connect("mongodb+srv://sivaji:sivaji@cluster0.sivaji79aaw.mongodb.net/<dbname>?retryWrites=true&w=majority"
 , {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  //useUnifiedTopology: true,
+	useCreateIndex: true
+}).then(() => {
+	console.log('Connected to DB!');
+}).catch(err => {
+	console.log('ERROR:', err.message);
 });
 app.use(passport.initialize());
 app.use(passport.session());
@@ -130,7 +136,7 @@ app.get("/campgrounds/:id",isLoggedIn,function(req,res){
 	});
 	
 });
-/===============================================
+//===============================================
 //ROUTE FOR DELETING CAMPGROUND 
 //===============================================
 app.delete("/campgrounds/:id",isowner,function(req,res){
@@ -139,7 +145,7 @@ app.delete("/campgrounds/:id",isowner,function(req,res){
 		else {res.redirect("/")}
 	});
 });
-/===============================================
+//===============================================
 //ROUTE FOR DELETING COMMENT
 //===============================================
 app.get("/campgrounds/:id1/comment/:id2",isownercmt,function(req,res){
