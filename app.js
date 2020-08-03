@@ -20,7 +20,7 @@ app.use(require("express-session")({
 
 mongoose.connect("mongodb+srv://sivaji:sivaji@cluster0.79aaw.mongodb.net/tourguide?retryWrites=true&w=majority", {
   useNewUrlParser: true,
-  //useUnifiedTopology: true,
+  useUnifiedTopology: true,
 	useCreateIndex: true
 }).then(() => {
 	console.log('Connected to DB!');
@@ -84,7 +84,7 @@ app.get("/",isLoggedIn,function(req,res){
 	
 	Camp.find({},function(err,campe){
 	if(err){console.log(err);}
-	else {console.log(campe); res.render("camp.ejs",{camps:campe,currentuser:req.user});}
+	else { res.render("camp.ejs",{camps:campe,currentuser:req.user});}
 });
 	
 });
